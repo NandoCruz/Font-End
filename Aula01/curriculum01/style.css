@@ -5,4 +5,41 @@
     font-family: Poppins, sans-serif;
 }
 
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(10, 37, 75, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(254, 195, 43, 1) 100%);
+}
+
+.dados-pessoais{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dados-pessoais > .imagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.dados-pessoais > .imagem > img{
+    width: 350px;
+    height: 350px;
+}
+
+.dados-pessoais > .imagem > h1{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+p{
+    font-size: 25px;
+}
+
 
