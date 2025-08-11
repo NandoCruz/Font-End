@@ -13,65 +13,70 @@ hr{
 
 .experiencia__container{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 70px;
     background-color: var(--cor-primaria);
+}
+
+.dados-texto{
+    margin-top: 30px;
 }
 .experiencia__context{
     width: 1040px;
-    height: 540px;
+    height: 600px;
     padding: 25px;
     border-radius: 20px;
     background-color: var(--cor-secundaria);
     box-shadow: 0 0 20px 0 var(--cor-secundaria);
     border: 3px solid var(--cor-primaria);
-    overflow: hidden;
 }
-/*
-.experiencia__context{
-    width: 1200px;
-    height: 1220px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: var(--cor-secundaria);
-    box-shadow: 0 0 20px 0 var(--cor-secundaria);
-    border: 3px solid var(--cor-primaria);
-    box-shadow: 0 0 10px 0;
-    overflow: hidden;
-}
-*/
 
-.experiencia__context > h2{
+#leiaMaisEx span{
+    color: var(--cor-primaria);
+}
+#verMais{
+    display: none;
+}
+
+.experiencia__context h2{
     font-size: 35px;
     text-align: center;
     margin-bottom: 15px;
     color: var(--cor-primaria);
 }
 
-.experiencia__context p{
+#experiencia p{
     color: var(--cor-quartenaria);
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-.experiencia__context p a{
+#experiencia p a{
     color: var(--cor-terciaria);
 }
 
-.experiencia__context p > span{
+#experiencia p span{
     color: var(--cor-primaria);
     font-size: 20px;
     font-weight: 600;
 }
 
-.experiencia__context > .voltar > img{
-    width: 50px;
+.experiencia__context > .buttons{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 980px;
 }
 
-.experiencia__context > .voltar > img:hover{
+.experiencia__context > .buttons > .voltar > img{
+    display: flexbox;
+    width: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+.experiencia__context > .buttons > .voltar > img:hover{
     transform: scale(1.1);
 }

@@ -23,7 +23,7 @@
         <nav class="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#experiencias">Experiência</a></li>
                 <li><a href="#competencia">Competência</a></li>
                 <li><a href="#formacao">Formação Acadêmica</a></li>
             </ul>
@@ -48,17 +48,16 @@
             </div>
         </div>
 
-        <div class="dados-texto">
-            <p>Sou técnico em <strong>Designer Gráfico</strong>, graduado em <strong>Análise e Desenvolvimento de Sistemas</strong>, pós-graduado em <strong>Data Science</strong> e MBA <strong>Full Stack Web Development</strong> em andamento. <span id="pontos">...</span></p><br>
+        <div class="dados-texto" id="leiaMais">
+            <p>Sou técnico em <strong>Designer Gráfico</strong>, graduado em <strong>Análise e Desenvolvimento de Sistemas</strong>, pós-graduado em <strong>Data Science</strong> e MBA <strong>Full Stack Web Development</strong> em andamento. <span id="pontos">...</span>
             
-            <span id="mais"><p>Atuando na área comercial e administrativa com foco no relacionamento com o cliente, auxiliando no processo produtivo do início ao fim, trabalhando e auxiliando equipes internas e externas. Possuo habilidade interpessoais bem desenvolvidas, me permitindo estabelecer relacionamentos sólidos com o cliente, trabalhar em equipe, ser resiliente, ter criatividade, pensamento crítico e visão de dono.</p>
+            <span id="mais"><br><br>Atuando na área comercial e administrativa com foco no relacionamento com o cliente, auxiliando no processo produtivo do início ao fim, trabalhando e auxiliando equipes internas e externas. Possuo habilidade interpessoais bem desenvolvidas, me permitindo estabelecer relacionamentos sólidos com o cliente, trabalhar em equipe, ser resiliente, ter criatividade, pensamento crítico e visão de dono.
 
-            <br><p>Tive uma excelente experiência na Escola SESI de Bayeux-PB com robótica nas competições Regionais e uma Estadual do SESI, onde o trabalho em equipe é fundamental, criando soluções e estratégias novas para cada competição, analisando os erros e acertos para melhorar ainda mais.</p><br>
+            <br><br>Tive uma excelente experiência na Escola SESI de Bayeux-PB com robótica nas competições Regionais e uma Estadual do SESI, onde o trabalho em equipe é fundamental, criando soluções e estratégias novas para cada competição, analisando os erros e acertos para melhorar ainda mais.
 
-            <p>Estou sempre me atualizando e busco constantemente melhorar minhas habilidades através de cursos e capacitações. Atualmente estou contribuindo como voluntário no Grud4J, colaborando nos meetups de Java e me especializando no curso de MBA Full Stack Web Development, na UNIESP.</p><br>
+            <br><br>Estou sempre me atualizando e busco constantemente melhorar minhas habilidades através de cursos e capacitações. Atualmente estou contribuindo como voluntário no Grud4J, colaborando nos meetups de Java e me especializando no curso de MBA Full Stack Web Development, na UNIESP.
 
-            <p>Meu objetivo é aplicar essa experiência e conhecimento na área de desenvolvimento comercial e administrativa, visando impulsionar o crescimento e a eficiência operacional da instituição com foco de sempre buscar o melhor para o cliente com a melhor experiência para o usuário.</p></span>
-
+            <br><br>Meu objetivo é aplicar essa experiência e conhecimento na área de desenvolvimento comercial e administrativa, visando impulsionar o crescimento e a eficiência operacional da instituição com foco de sempre buscar o melhor para o cliente com a melhor experiência para o usuário.</p></span>
             <button onclick="leiaMais()" id="btnLeiaMais">Leia Mais</button>
         </div>
     </main> <!-- Fim do Main -->
@@ -82,45 +81,53 @@
         </div>
     </aside> <!-- Fim do encereço container -->
     
-    <aside class="experiencia__container" id="experiencia">
-        <div class="experiencia__context">
+    <aside class="experiencia__container" id="experiencias">
+        <div class="experiencia__context" id="leiaMaisEx">
             <h2>Experiência Profissional</h2>
+            
             <div class="experiencias">
                 <div class="experiencia01" id="experiencia">
                     <p>JUNHO 2021 – SETEMBRO 2024 - <span>Tutor Digital</span></p>
-                    <p><span>Grupo Ser Educacional</span> - Recife, Pernambuco</p><br>
+                    <p><span>Grupo Ser Educacional</span> - Recife, Pernambuco</p>
                     <p>Como um dos Tutores Digitais dos cursos de tecnologia do grupo Ser Educacional com mais de 3 anos trabalhando em equipe, dando suporte aos alunos nas múltiplas disciplinas dos cursos de tecnologias, como: Análise e Estatística de Dados, Gestão Ágil de Projetos, Mineração de Dados, Machine Learning, Estrutura de Dados, Aprendizagem Profunda, Visualização de Dados, Engenharia de Dados, Fund. da Inteligência Analítica, Fund. da Inteligência Artificial, entre outras. Usando a ferramenta TOVTS no CRA, CRM, meu RH, entrando em contato com os alunos através da ferramenta Hyperflow.</p>
                     <hr>
                 </div>
 
                 <div class="experiencia02" id="experiencia">
                     <p>DEZEMBRO 2022 – FEVEREIRO 2023 - <span>Técnico de Robótica</span></p>
-                    <p><span>Grupo Ser Educacional</span> - Bayeux, Paraíba</p><br>
-                    <p>Como técnico de robótica, orientando as equipes em competições de estaduais e nacional em estratégias, corrigindo erros e aperfeiçoando os acertos. Nas múltiplas disciplinas de tecnologia envolvendo engenharia da computação, programação orientação a objetos, desenvolvimento de software, algoritmos, metodologias ágeis, entre outras. <a href="#">Leia mais</a></p>
+                    <p><span>Grupo Ser Educacional</span> - Bayeux, Paraíba</p>
+                    <p>Como técnico de robótica, orientando as equipes em competições de estaduais e nacional em estratégias, corrigindo erros e aperfeiçoando os acertos. Nas múltiplas disciplinas de tecnologia envolvendo engenharia da computação, programação orientação a objetos, desenvolvimento de software, algoritmos, metodologias ágeis, entre outras.
                     <hr>
                 </div>
 
-                <div class="experiencia03" id="experiencia">
-                    <p>JANEIRO 2009 - MAIO 2021 - <span>Designer Gráfico</span></p>
-                    <p><span>Terceirizado</span> - Belém, Pará</p><br>
-                    <p>Fui responsável em administrar e controlar projetos gráficos na criação de Layout, gerenciando o atendimento ao cliente nos requisitos para criação de Layout e na venda, no processo de produção, na entrega e pós-venda, responsável pela elaboração de proposta do orçamento, emissão de recibos e notas fiscais, manutenção em hardware e instalação de sotfware.</p>
-                    <hr>
-                </div>
+                <span id="pontosEx">...</span>
+                <div id="verMais">
+                    <div class="experiencia03" id="experiencia">
+                        <p>JANEIRO 2009 - MAIO 2021 - <span>Designer Gráfico</span></p>
+                        <p><span>Terceirizado</span> - Belém, Pará</p>
+                        <p>Fui responsável em administrar e controlar projetos gráficos na criação de Layout, gerenciando o atendimento ao cliente nos requisitos para criação de Layout e na venda, no processo de produção, na entrega e pós-venda, responsável pela elaboração de proposta do orçamento, emissão de recibos e notas fiscais, manutenção em hardware e instalação de sotfware.</p>
+                        <hr>
+                    </div>
 
-                <div class="experiencia04" id="experiencia">
-                    <p>MAIO 2008 - DEZEMBRO 2008 - <span>Designer Gráfico</span></p>
-                    <p><span>Gráfica Smith </span> - Belém, Pará</p><br>
-                    <p>Fui responsável em administrar e controlar projetos gráficos na criação e montagem de Layout para impressão em CTP.</p>
-                    <hr>
-                </div>
+                    <div class="experiencia04" id="experiencia">
+                        <p>MAIO 2008 - DEZEMBRO 2008 - <span>Designer Gráfico</span></p>
+                        <p><span>Gráfica Smith </span> - Belém, Pará</p>
+                        <p>Fui responsável em administrar e controlar projetos gráficos na criação e montagem de Layout para impressão em CTP.</p>
+                        <hr>
+                    </div>
 
-                <div class="experiencia05" id="experiencia">
-                    <p>JANEIRO 2004 - SETEMBRO 2004 - <span>Designer Gráfico</span></p>
-                    <p><span>Gráfica Delta</span> - Belém, Pará</p><br>
-                    <p>Fui responsável em administrar e controlar projetos gráficos na criação e montagem de Layout para impressão em CTP.</p>
+                    <div class="experiencia05" id="experiencia">
+                        <p>JANEIRO 2004 - SETEMBRO 2004 - <span>Designer Gráfico</span></p>
+                        <p><span>Gráfica Delta</span> - Belém, Pará</p>
+                        <p>Fui responsável em administrar e controlar projetos gráficos na criação e montagem de Layout para impressão em CTP.</p>
+                    </div>
                 </div>
             </div>
-            <a class="voltar" href="#"><img src="imagem/02-seta.png" alt=""></a>
+
+            <div class="buttons">
+                <button onclick="leia()" id="btnLeiaMaisEx">Leia Mais</button>
+                <a class="voltar" href="#"><img src="imagem/02-seta.png" alt=""></a>
+                </div>
         </div>
     </aside> <!-- Fim do experiencia container -->
 
