@@ -1,0 +1,74 @@
+:root{
+    --cor-primaria: rgb(0, 238, 255);
+    --cor-secundaria: #000;
+    --cor-terciaria: #fff;
+    --cor-quartenaria: #808080;
+}
+
+.formacao__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-secundaria);
+}
+
+.formacao__context{
+    width: 800px;
+    height: 500px;
+    padding: 10px 50px;
+    border: 3px solid var(--cor-primaria);
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 var(--cor-primaria);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 238, 255, 1) 100%);
+    overflow: hidden;
+}
+
+.formacao__context h2{
+    font-size: 35px;
+    text-align: center;
+    color: var(--cor-primaria);
+}
+
+.formacao h4{
+    font-size: 25PX;
+    margin: 25px 0 0 0;
+}
+
+.formacao h4 a{
+    display: inline-flex;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.formacao h4 a:hover{
+    transform: scale(1.1);
+}
+
+.formacao p{
+    font-size: 20px;
+    color: var(--cor-terciaria);
+}
+
+.formacao__context > .voltar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-left: -55px;
+    padding: 0 20px 0 0;
+    width: 800px;
+    height: 65px;
+    background-color: var(--cor-secundaria);
+}
+
+.formacao__context > .voltar > img{
+    width: 50px;
+    display: flex;
+}
+
+.formacao__context > .voltar > img:hover{
+    transform: scale(1.1);
+}

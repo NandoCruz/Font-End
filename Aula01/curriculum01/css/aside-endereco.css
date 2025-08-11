@@ -1,0 +1,56 @@
+:root{
+    --cor-primaria: rgb(0, 238, 255);
+    --cor-secundaria: #000;
+    --cor-terciaria: #fff;
+    --cor-quartenaria: #808080;
+}
+.endereco__container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-secundaria);
+}
+
+.endereco_context{
+    width: 600px;
+    height: 430px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(3, 3, 3, 0.158);
+    border: 3px solid var(--cor-primaria);
+    box-shadow: 0 0 30px 0 var(--cor-primaria);
+}
+
+.endereco > h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
+    text-align: center;
+} 
+
+.endereco .endereco_dados{
+    font-size: 20px;
+}
+
+.endereco > .endereco_dados > dt{
+    color: var(--cor-primaria);
+}
+
+.endereco > .endereco_dados > dd{
+    color: var(--cor-quartenaria);
+}
+
+.endereco_context > .voltar{
+    width: 550px;
+    display: flex;
+    justify-content: end;
+}
+.endereco_context > .voltar > img{
+    width: 50px;
+    display: flex;
+}
+
+.endereco_context > .voltar > img:hover{
+    transform: scale(1.1);
+}

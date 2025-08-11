@@ -4,114 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Fernando</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/aside-endereco.css">
+    <link rel="stylesheet" href="./css/aside-experiencia.css">
+    <link rel="stylesheet" href="./css/aside-competencias.css">
+    <link rel="stylesheet" href="./css/aside-formacao.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Google Font -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="dados-pessoais">
-        <div class="imagem">
-            <img src="imagem/FernandoCruz.png" alt="">
-            <h1>Fernando Cruz</h1>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#competencia">Competência</a></li>
+                <li><a href="#formacao">Formação Acadêmica</a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociais">
+            <a href="https://github.com/NandoCruz"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/fernandocruzdeaguiar/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/fcruz6241/"><i class="bi bi-instagram"></i></a>
         </div>
-        <div class="dados">
-            <p><strong>Nascimento:</strong> <em>24/08-1972</em></p>
-            <p><strong>Email:</strong> <em>nando33_2005@hotmail.com</em></p>
-            <p><strong>Telefone:</strong> <em>(83) 99838-8777</em></p><br>
+    </header> <!-- Fim do Header -->
+
+    <main>
+        <div class="dados-pessoais">
+            <div class="imagem">
+                <img src="imagem/01-foto.png" alt="">
+                <h1>Fernando Cruz</h1>
+            </div>
+            <div class="dados">
+                <p><strong>Nascimento:</strong> <span>24/08/1972</span></p>
+                <p><strong>Email:</strong> <span>nando33_2005@hotmail.com</span></p>
+                <p><strong>Telefone:</strong> <span>(83) 99838-8777</span></p><br>
+            </div>
         </div>
-    </div>
 
-    <div class="dados-texto">
-        <p>Sou técnico em <strong>Designer Gráfico</strong>, graduado em <strong>Análise e Desenvolvimento de Sistemas</strong>, pós-graduado em <strong>Data Science</strong> e MBA <strong>Full Stack Web Development</strong> em andamento. <a href="#">Leia mais</a></p>
-        <br>
+        <div class="dados-texto">
+            <p>Sou técnico em <strong>Designer Gráfico</strong>, graduado em <strong>Análise e Desenvolvimento de Sistemas</strong>, pós-graduado em <strong>Data Science</strong> e MBA <strong>Full Stack Web Development</strong> em andamento. <span id="pontos">...</span></p><br>
+            
+            <span id="mais"><p>Atuando na área comercial e administrativa com foco no relacionamento com o cliente, auxiliando no processo produtivo do início ao fim, trabalhando e auxiliando equipes internas e externas. Possuo habilidade interpessoais bem desenvolvidas, me permitindo estabelecer relacionamentos sólidos com o cliente, trabalhar em equipe, ser resiliente, ter criatividade, pensamento crítico e visão de dono.</p>
 
-        <p>Atuando na área comercial e administrativa com foco no relacionamento com o cliente, auxiliando no processo produtivo do início ao fim, trabalhando e auxiliando equipes internas e externas. Possuo habilidade interpessoais bem desenvolvidas, me permitindo estabelecer relacionamentos sólidos com o cliente, trabalhar em equipe, ser resiliente, ter criatividade, pensamento crítico e visão de dono.</p><br>
+            <br><p>Tive uma excelente experiência na Escola SESI de Bayeux-PB com robótica nas competições Regionais e uma Estadual do SESI, onde o trabalho em equipe é fundamental, criando soluções e estratégias novas para cada competição, analisando os erros e acertos para melhorar ainda mais.</p><br>
 
-        <p>Tive uma excelente experiência na Escola SESI de Bayeux-PB com robótica nas competições Regionais e uma Estadual do SESI, onde o trabalho em equipe é fundamental, criando soluções e estratégias novas para cada competição, analisando os erros e acertos para melhorar ainda mais.</p><br>
+            <p>Estou sempre me atualizando e busco constantemente melhorar minhas habilidades através de cursos e capacitações. Atualmente estou contribuindo como voluntário no Grud4J, colaborando nos meetups de Java e me especializando no curso de MBA Full Stack Web Development, na UNIESP.</p><br>
 
-        <p>Estou sempre me atualizando e busco constantemente melhorar minhas habilidades através de cursos e capacitações. Atualmente estou contribuindo como voluntário no Grud4J, colaborando nos meetups de Java e me especializando no curso de MBA Full Stack Web Development, na UNIESP.</p><br>
+            <p>Meu objetivo é aplicar essa experiência e conhecimento na área de desenvolvimento comercial e administrativa, visando impulsionar o crescimento e a eficiência operacional da instituição com foco de sempre buscar o melhor para o cliente com a melhor experiência para o usuário.</p></span>
 
-        <p>Meu objetivo é aplicar essa experiência e conhecimento na área de desenvolvimento comercial e administrativa, visando impulsionar o crescimento e a eficiência operacional da instituição com foco de sempre buscar o melhor para o cliente com a melhor experiência para o usuário.</p><br>
-    </div>
+            <button onclick="leiaMais()" id="btnLeiaMais">Leia Mais</button>
+        </div>
+    </main> <!-- Fim do Main -->
 
-    <div class="sumario">
-        <h2>Sumário</h2>
-        <hr>
-        <ul>
-            <li><a>Endereço</a></li>
-            <li><a>Experiência</a></li>
-            <li><a>Competência</a></li>
-            <li><a>Formação Acadêmica</a></li>
-        </ul>
-    </div>
-
-    <div class="endereco">
-        <h2>Endereço</h2>
-        <hr>
-        <dl>
-            <dt><strong>Rua</strong></dt>
-            <dd>Francisco Feitosa Palitot</dd>
-            <dt><strong>Fone</strong></dt>
-            <dd>83 99838-8777</dd>
-            <dt><strong>Cidade</strong></dt>
-            <dd>João Pessoa</dd>
-            <dt><strong>Bairro</strong></dt>
-            <dd>Aeroclub</dd>
-        </dl>
-    </div>
-    <a href="#">Topo</a>
-
-    <div class="experiencia">
-        <h2>Experiência</h2>
-        <hr>
-        <dl>
-            <dt>Terceirizado - Belém, Pará</dt>
-            <dd>JANEIRO 2009 - MAIO DE 2021 Designer Gráfico</dd>
-        </dl>
-        <p>Fui responsável em administrar e controlar projetos gráficos na criação de Layout, gerenciando o atendimento ao cliente nos requisitos para criação de Layout e na venda, no processo de produção, na entrega e pós-venda, responsável pela elaboração de proposta do orçamento, emissão de recibos e notas fiscais, manutenção em hardware e instalação de sotfware.</p>
-    </div>
-    <a href="#">Topo</a>
-
-    <div class="competencia">
-        <h2>Competências</h2>
-        <hr>
-        <ul>
-            <li>JavaScript</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>XML</li>
-            <li>Typescript</li>
-            <li>MySQL</li>
-            <li>Postgres</li>
-            <li>Java</li>
-            <li>Python</li>
-        </ul>
-    </div>
+    <aside class="endereco__container" id="endereco">
+        <div class="endereco_context">
+            <div class="endereco">
+                <h2>Endereço</h2>
+                <dl class="endereco_dados">
+                    <dt><strong>Rua</strong></dt>
+                    <dd>Francisco Feitosa Palitot</dd>
+                    <dt><strong>Fone</strong></dt>
+                    <dd>83 99838-8777</dd>
+                    <dt><strong>Cidade</strong></dt>
+                    <dd>João Pessoa</dd>
+                    <dt><strong>Bairro</strong></dt>
+                    <dd>Aeroclub</dd>
+                </dl>
+            </div>
+            <a class="voltar" href="#"><img src="imagem/02-seta.png" alt=""></a>
+        </div>
+    </aside> <!-- Fim do encereço container -->
     
-    <a href="#">Topo</a>
+    <aside class="experiencia__container" id="experiencia">
+        <div class="experiencia__context">
+            <h2>Experiência Profissional</h2>
+            <div class="experiencias">
+                <div class="experiencia01" id="experiencia">
+                    <p>JUNHO 2021 – SETEMBRO 2024 - <span>Tutor Digital</span></p>
+                    <p><span>Grupo Ser Educacional</span> - Recife, Pernambuco</p><br>
+                    <p>Como um dos Tutores Digitais dos cursos de tecnologia do grupo Ser Educacional com mais de 3 anos trabalhando em equipe, dando suporte aos alunos nas múltiplas disciplinas dos cursos de tecnologias, como: Análise e Estatística de Dados, Gestão Ágil de Projetos, Mineração de Dados, Machine Learning, Estrutura de Dados, Aprendizagem Profunda, Visualização de Dados, Engenharia de Dados, Fund. da Inteligência Analítica, Fund. da Inteligência Artificial, entre outras. Usando a ferramenta TOVTS no CRA, CRM, meu RH, entrando em contato com os alunos através da ferramenta Hyperflow.</p>
+                    <hr>
+                </div>
 
-    <div class="formacao">
-        <h2>Formação Acadêmica</h2>
-        <hr>
-        <h4><a href="https://www.unama.br/">UNAMA</a></h4>
-        <p>Graduação Análise e Desenvolvimento de Sistemas</p>
-        <p>2018-2021</p>
+                <div class="experiencia02" id="experiencia">
+                    <p>DEZEMBRO 2022 – FEVEREIRO 2023 - <span>Técnico de Robótica</span></p>
+                    <p><span>Grupo Ser Educacional</span> - Bayeux, Paraíba</p><br>
+                    <p>Como técnico de robótica, orientando as equipes em competições de estaduais e nacional em estratégias, corrigindo erros e aperfeiçoando os acertos. Nas múltiplas disciplinas de tecnologia envolvendo engenharia da computação, programação orientação a objetos, desenvolvimento de software, algoritmos, metodologias ágeis, entre outras. <a href="#">Leia mais</a></p>
+                    <hr>
+                </div>
 
-        <h4><a href="https://www.uninassau.edu.br/">UNINASSAU</a></h4>
-        <p>Pós-graduação Data Science</p>
-        <p>2021-2022</p>
+                <div class="experiencia03" id="experiencia">
+                    <p>JANEIRO 2009 - MAIO 2021 - <span>Designer Gráfico</span></p>
+                    <p><span>Terceirizado</span> - Belém, Pará</p><br>
+                    <p>Fui responsável em administrar e controlar projetos gráficos na criação de Layout, gerenciando o atendimento ao cliente nos requisitos para criação de Layout e na venda, no processo de produção, na entrega e pós-venda, responsável pela elaboração de proposta do orçamento, emissão de recibos e notas fiscais, manutenção em hardware e instalação de sotfware.</p>
+                    <hr>
+                </div>
 
-        <h4><a href="https://www-iesp-edu-br.rds.land/pm-lp-matriculas-2025-2?utm_source=google&utm_medium=cpc&utm_campaign=lead&utm_term=pesquisa&gad_source=1&gad_campaignid=22595804847&gbraid=0AAAAA_jQ84oSIb8Mu87ZJIqTkCq2eBWg0&gclid=CjwKCAjw49vEBhAVEiwADnMbbLiSh7cH49xsP27QxQOedQy8u1zatQLlCtNMvKIf_2vSfPtlxHiEoxoCDxUQAvD_BwE">Uniesp</a></h4>
-        <p>MBA Full Stack Web Development</p>
-        <p>2025-Atual</p>
-    </div>
-    <a href="#">Topo</a>
+                <div class="experiencia04" id="experiencia">
+                    <p>MAIO 2008 - DEZEMBRO 2008 - <span>Designer Gráfico</span></p>
+                    <p><span>Gráfica Smith </span> - Belém, Pará</p><br>
+                    <p>Fui responsável em administrar e controlar projetos gráficos na criação e montagem de Layout para impressão em CTP.</p>
+                    <hr>
+                </div>
 
+                <div class="experiencia05" id="experiencia">
+                    <p>JANEIRO 2004 - SETEMBRO 2004 - <span>Designer Gráfico</span></p>
+                    <p><span>Gráfica Delta</span> - Belém, Pará</p><br>
+                    <p>Fui responsável em administrar e controlar projetos gráficos na criação e montagem de Layout para impressão em CTP.</p>
+                </div>
+            </div>
+            <a class="voltar" href="#"><img src="imagem/02-seta.png" alt=""></a>
+        </div>
+    </aside> <!-- Fim do experiencia container -->
+
+    <aside class="competencia__container" id="competencia">
+        <div class="competencia__context">
+            <div class="competencias">
+                <h2>Competências</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>PHP</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>XML</li>
+                    <li>Typescript</li>
+                    <li>Angular</li>
+                    <li>MySQL</li>
+                    <li>Postgres</li>
+                    <li>Docker</li>
+                    <li>PowerBI</li>
+                    <li>Git e GitHub</li>
+                    <li>Canva</li>
+                    <li>Corel Draw</li>
+                    <li>Photshop</li>
+                </ul>
+            </div>
+            <a class="voltar" href="#"><img src="imagem/02-seta.png" alt=""></a>
+        </div>
+    </aside> <!-- Fim do competencia container -->
+    
+    <aside class="formacao__container" id="formacao">
+        <div class="formacao__context">
+            <h2>Formação Acadêmica</h2>
+            
+            <div class="formacao">
+                <h4><a href="https://www.unama.br/">UNAMA</a></h4>
+                <p>Graduação Análise e Desenvolvimento de Sistemas</p>
+                <p>2018-2021</p>
+
+                <h4><a href="https://www.uninassau.edu.br/">UNINASSAU</a></h4>
+                <p>Pós-graduação Data Science</p>
+                <p>2021-2022</p>
+
+                <h4><a href="https://www-iesp-edu-br.rds.land/pm-lp-matriculas-2025-2?utm_source=google&utm_medium=cpc&utm_campaign=lead&utm_term=pesquisa&gad_source=1&gad_campaignid=22595804847&gbraid=0AAAAA_jQ84oSIb8Mu87ZJIqTkCq2eBWg0&gclid=CjwKCAjw49vEBhAVEiwADnMbbLiSh7cH49xsP27QxQOedQy8u1zatQLlCtNMvKIf_2vSfPtlxHiEoxoCDxUQAvD_BwE">Uniesp</a></h4>
+                <p>MBA Full Stack Web Development</p>
+                <p>2025-Atual</p>
+            </div>
+            <a class="voltar" href="#"><img src="imagem/02-seta.png" alt=""></a>
+        </div>
+        
+    </aside>
+    
     <footer class="rodape">
-        & 2025
+        <div>
+        <p>&copy Fernando Cruz 2025</p>
+        </div>
+        <div class="redes-sociais">
+            <a href="https://github.com/NandoCruz"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/fernandocruzdeaguiar/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/fcruz6241/"><i class="bi bi-instagram"></i></a>
+        </div>
     </footer>
+
+    <script type="text/javascript" src="scripts.js"></script>
 
 </body>
 </html>

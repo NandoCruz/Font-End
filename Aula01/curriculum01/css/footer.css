@@ -1,0 +1,40 @@
+:root{
+    --cor-primaria: rgb(0, 238, 255);
+    --cor-secundaria: #000;
+    --cor-terciaria: #fff;
+    --cor-quartenaria: #808080;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 65px;
+    background-color: var(--cor-primaria);
+}
+
+.redes-sociais{
+    display: inline-flex;
+}
+    
+.redes-sociais a{
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.redes-sociais a:hover{
+    transform: scale(1.2);
+}
+
+.redes-sociais i{
+    font-size: 30px;
+    margin-right: 20px;
+    color: black;
+}
+
+
+.redes-sociais :hover{
+    transform: scale(1.2);
+    color: rgb(0, 76, 82);
+}
