@@ -5,13 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div>
+    <div class="calculadora-container">
         <div class="tela">
-            <input type="text">
+            <input type="text" disabled id="resultado">
+            <p id="resultado"></p>
         </div>
-        
+        <div class="imagem">
+            <img src="imagens/logo-amarela.png" alt="">
+        </div>
+        <div class="teclas">
+            <button onclick="trocaC()" id="btnC"><img class="off" id="imagemC" src="imagens/C1.png" alt="tecla C"></button>
+            <button onclick="raiz()" id="btnParenteses"><img src="imagens/raiz.png" alt="tecla raiz quadrada"></button>
+            <button onclick="porcentagem()" id="btnPorcentagem"><img src="imagens/porcentagem.png" alt="tecla porcentagem"></button>
+            <button onclick="trocaDiv()" id="btnDivisão"><img class="off" id="imagemDiv" src="imagens/divisao1.png" alt="tecla divisão"></button>
+            
+            <button onclick="insert('7')" id="btn7"><img src="imagens/7.png" alt="tecla 7"></button>
+            <button onclick="insert('8')" id="btn8"><img src="imagens/8.png" alt="tecla 8"></button>
+            <button onclick="insert('9')" id="btn9"><img src="imagens/9.png" alt="tecla 9"></button>
+            <button onclick="trocaMult()" id="btnMultiplicacao"><img class="off" id="imagemMult" src="imagens/multiplicacao1.png" alt="tecla multiplicação"></button>
+            
+            <button onclick="insert('4')" id="btn4"><img src="imagens/4.png" alt="tecla 4"></button>
+            <button onclick="insert('5')" id="btn5"><img src="imagens/5.png" alt="tecla 5"></button>
+            <button onclick="insert('6')" id="btn6"><img src="imagens/6.png" alt="tecla 6"></button>
+            <button onclick="trocaSub()" id="btnSubtracao"><img class="off" id="imagemSub" src="imagens/subtracao1.png" alt="tecla subtração"></button>
+            
+            <button onclick="insert('1')" id="btn1"><img src="imagens/1.png" alt="tecla 1"></button>
+            <button onclick="insert('2')" id="btn2"><img src="imagens/2.png" alt="tecla 2"></button>
+            <button onclick="insert('3')" id="btn3"><img src="imagens/3.png" alt="tecla 3"></button>
+            <button onclick="trocaSoma()" id="btnSoma"><img class="off" id="imagemSoma" src="imagens/soma1.png" alt="tecla soma"></button>
+            
+            <button onclick="back()" id="btnBack"><img src="imagens/back.png" alt="tecla back"></button>
+            <button onclick="insert('0')" id="btnZero"><img src="imagens/0.png" alt="tecla zero"></button>
+            <button onclick="insert('.')" id="btnPonto"><img src="imagens/ponto.png" alt="tecla ponto"></button>
+            <button onclick="calcular()" id="btnIgual"><img src="imagens/igual1.png" alt="tecla igual"></button>
+        </div>
     </div>
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
