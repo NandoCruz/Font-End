@@ -134,8 +134,6 @@ function trocaSoma(){
         imgSoma.className = "off";
         const resultado = document.querySelector("#resultado")
         resultado.value = resultado.value.slice(0, -1)
-        
-    
     }
 }
 
