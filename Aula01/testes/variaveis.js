@@ -1,3 +1,4 @@
+/*
 let number
 number = 10
 number = 100
@@ -32,7 +33,7 @@ if(operador === '+'){
 } else if (operador === '-'){
     result = number1 - number2
 }
-*/
+
 switch(operador){
     case '+':
         result = number1 + number2
@@ -97,8 +98,58 @@ const soma = (x,y) => x + y
 
 console.log(calc(2,18, soma))
 
-// Cenário função ESM
+const xnumeros = [];
 
-function sum(a,b){
-    return a + b
+xnumeros[0] = 10
+xnumeros[1] = 20
+xnumeros[10] = 100
+
+console.log(xnumeros)
+
+
+const numbers = [1,2,4]
+let result = ""
+for (let flag = 0; flag < numbers.length; flag++){
+    result += numbers[flag] + " "
 }
+
+console.log(result)
+
+
+const numbers = [5,6,7]
+let result = ""
+for (const index in numbers){
+    result += numbers[index] + " "
+}
+
+console.log(result)
+
+const number = [15,16,17]
+let resultado = ""
+for (const value of number){
+    result += value + " "
+}
+
+console.log(result)
+
+
+const array = [1,2,3,4,5,6,]
+console.log(array)
+console.log(array.map((value) => value * 2))
+
+const array = [1,2,3,4,5,6,]
+
+console.log(array.filter((value) => value % 2 !== 0))
+
+const ip = {
+    address: '192.168.0.2', 
+    mask: '255.255.255.0'
+}
+
+ip.version = 'v6'
+
+console.log(ip)
+console.log(ip.address)
+console.log(ip['address'])
+*/
+
